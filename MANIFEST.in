@@ -1,0 +1,5 @@
+include AUTHORS
+include LICENSE
+include README.rst
+recursive-include model_utils/static *
+recursive-include model_utils/templates *
