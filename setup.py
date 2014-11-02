@@ -12,6 +12,11 @@ def read_file(filename):
         return ''
 
 
+install_requires = [
+    'wagtail>=0.7'
+]
+
+
 setup(
     name='wagtail-model-utils',
     version=__import__('model_utils').__version__,
@@ -37,6 +42,7 @@ setup(
         'Operating System :: OS Independent',
     ],
     long_description=read_file('README.rst'),
+    install_requires=install_requires,
     test_suite="runtests.runtests",
     zip_safe=False,
 )
